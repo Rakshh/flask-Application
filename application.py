@@ -3,7 +3,7 @@ application= Flask(__name__)
 
 @application.route('/')
 def hello_world():
-    return 'Sup.Subscribe'
+    return render_template('index.html')
 @application.route('/login')
 def login():   
     """
