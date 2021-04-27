@@ -1,4 +1,7 @@
-from flask import Flask
+from flask import Flask, render_template, request
+from boto3.dynamodb.conditions import Key, Attr
+import boto3
+import key_config as keys
 application= Flask(__name__)
 
 @application.route('/')
