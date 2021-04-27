@@ -6,7 +6,7 @@ application= Flask(__name__)
 
 @application.route('/')
 def hello_world():
-    return render_template('index.html')
+    return 'hello'
 @application.route('/login')
 def login():   
     """
